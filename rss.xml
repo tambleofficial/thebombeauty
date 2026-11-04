@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>더봄뷰티 THE BOM BEAUTY</title>
+    <link>https://thebombeauty.com/</link>
+    <description>수원 더봄뷰티 — 눈썹·입술·아이라인·두피 반영구 디자인과 잔흔 수정·복원 상담</description>
+    <language>ko-KR</language>
+    <lastBuildDate>Wed, 04 Nov 2026 09:00:00 +0900</lastBuildDate>
+    <atom:link href="https://thebombeauty.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>더봄뷰티 THE BOM BEAUTY</title>
+      <link>https://thebombeauty.com/</link>
+      <guid isPermaLink="true">https://thebombeauty.com/</guid>
+      <description>얼굴형에 맞춘 퍼스널 반영구 디자인과 잔흔 수정·복원 상담</description>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>BRAND — 브랜드와 대표원장</title>
+      <link>https://thebombeauty.com/brand</link>
+      <guid isPermaLink="true">https://thebombeauty.com/brand</guid>
+      <description>더봄뷰티의 디자인 기준과 장형겸 대표원장 프로필</description>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>PROGRAM — 눈썹·입술·아이라인·두피</title>
+      <link>https://thebombeauty.com/program</link>
+      <guid isPermaLink="true">https://thebombeauty.com/program</guid>
+      <description>프로그램별 상담 기준과 진행 방식</description>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>CORRECTION — 잔흔 수정·복원</title>
+      <link>https://thebombeauty.com/correction</link>
+      <guid isPermaLink="true">https://thebombeauty.com/correction</guid>
+      <description>기존 반영구 상태 확인과 수정·복원 상담</description>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>CASES — 작업 사례·후기</title>
+      <link>https://thebombeauty.com/cases</link>
+      <guid isPermaLink="true">https://thebombeauty.com/cases</guid>
+      <description>카테고리별 실제 작업 사례와 고객 후기</description>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>CONTACT — 상담·오시는 길</title>
+      <link>https://thebombeauty.com/contact</link>
+      <guid isPermaLink="true">https://thebombeauty.com/contact</guid>
+      <description>전화 010-4131-2490 · 네이버 플레이스 · SNS</description>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
