@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#850D20"></rect><text x="50" y="60" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#F5F1ED">BOM</text></svg></template>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{margin:0;background:#080708;color:#F5F1ED;font-family:"Pretendard Variable",Pretendard,"Helvetica Neue",Inter,sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:inherit;text-decoration:none}
+a:hover{color:inherit}
+*{box-sizing:border-box}
+::selection{background:#A51229;color:#FFFFFF}
+</style>
+</helmet>
+<dc-import name="Header v4" active="CONTACT" hint-size="100%,0px"></dc-import>
+<dc-import name="DetailRibbon v7" variant="A" en="CONTACT" ko="상담 · 예약 ·|오시는 길" desc="전화 · 네이버 예약 · 인스타그램 DM 중 편한 방법으로 상담을 예약하세요." hint-size="100%,70svh"></dc-import>
+<section id="reserve" data-screen-label="01 How to Book" style="background:#F5F1ED;color:#080708;padding:clamp(88px,10vw,144px) clamp(20px,5vw,72px)">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px">
+      <span style="font-size:12px;font-weight:600;letter-spacing:0.28em;color:#850D20">HOW TO BOOK</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.8vw,52px);font-weight:600;line-height:1.24;letter-spacing:-0.035em">상담 방법을 선택하세요</h2>
+      <p style="margin:0;font-size:17px;line-height:1.75;color:#4E4648">세 가지 방법 중 편한 방법으로 연락 주시면 원장이 직접 상담합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px">
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding:clamp(32px,3.6vw,48px) 28px;background:#FFFFFF;border:1px solid #850D20">
+        <span style="width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#850D20;color:#FFFFFF"><dc-import name="SnsIcon" icon="phone" size="24" hint-size="24px,24px"></dc-import></span>
+        <span style="font-size:13px;font-weight:700;letter-spacing:0.16em;color:#850D20">01</span>
+        <span style="font-size:24px;font-weight:700;letter-spacing:-0.02em">전화 상담</span>
+        <span style="font-size:26px;font-weight:700;color:#080708;white-space:nowrap">010-4131-2490</span>
+        <span style="font-size:15px;line-height:1.7;color:#4E4648;max-width:260px">가장 빠르게 상담하실 수 있습니다.</span>
+        <a href="tel:01041312490" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;font-size:16px;font-weight:700;transition:transform .3s ease,background .3s ease;width:100%;margin-top:auto;background:#850D20;color:#FFFFFF" style-hover="transform:translateY(-2px)">전화 걸기</a>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding:clamp(32px,3.6vw,48px) 28px;background:#FFFFFF;border:1px solid #E2DAD5">
+        <span style="width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#F5F1ED;color:#850D20"><dc-import name="SnsIcon" icon="naver" size="24" hint-size="24px,24px"></dc-import></span>
+        <span style="font-size:13px;font-weight:700;letter-spacing:0.16em;color:#850D20">02</span>
+        <span style="font-size:24px;font-weight:700;letter-spacing:-0.02em">네이버 예약</span>
+        <span style="font-size:17px;font-weight:600;color:#080708;white-space:nowrap">네이버 플레이스</span>
+        <span style="font-size:15px;line-height:1.7;color:#4E4648;max-width:260px">예약 · 후기 · 위치를 한 번에 확인할 수 있습니다.</span>
+        <a href="https://naver.me/xq3aRFIe" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;font-size:16px;font-weight:700;transition:transform .3s ease,background .3s ease;width:100%;margin-top:auto;background:#080708;color:#FFFFFF" style-hover="transform:translateY(-2px)">네이버에서 예약하기</a>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding:clamp(32px,3.6vw,48px) 28px;background:#FFFFFF;border:1px solid #E2DAD5">
+        <span style="width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#F5F1ED;color:#850D20"><dc-import name="SnsIcon" icon="instagram" size="24" hint-size="24px,24px"></dc-import></span>
+        <span style="font-size:13px;font-weight:700;letter-spacing:0.16em;color:#850D20">03</span>
+        <span style="font-size:24px;font-weight:700;letter-spacing:-0.02em">인스타그램 DM</span>
+        <span style="font-size:17px;font-weight:600;color:#080708;white-space:nowrap">@thebomm_beauty</span>
+        <span style="font-size:15px;line-height:1.7;color:#4E4648;max-width:260px">현재 상태 사진을 보내 먼저 상담할 수 있습니다.</span>
+        <a href="https://www.instagram.com/thebomm_beauty" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;font-size:16px;font-weight:700;transition:transform .3s ease,background .3s ease;width:100%;margin-top:auto;background:#080708;color:#FFFFFF" style-hover="transform:translateY(-2px)">DM 보내기</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="location" data-screen-label="02 Location" style="background:#FFFFFF;color:#080708;padding:clamp(88px,10vw,144px) clamp(20px,5vw,72px)">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px">
+      <span style="font-size:12px;font-weight:600;letter-spacing:0.28em;color:#850D20">LOCATION</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.8vw,52px);font-weight:600;line-height:1.24;letter-spacing:-0.035em">오시는 길</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,4vw,56px);align-items:stretch">
+      <div style="position:relative;min-height:400px;background:#F5F1ED;border:1px solid #E2DAD5"><iframe title="더봄뷰티 위치 (Google 지도)" src="https://maps.google.com/maps?q=%EB%8D%94%EB%B4%84%EB%B7%B0%ED%8B%B0%20%EC%88%98%EC%9B%90&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>
+      <div style="display:flex;flex-direction:column;justify-content:center;gap:28px">
+        <div style="display:flex;flex-direction:column;border-bottom:1px solid #D8D0CB"><div style="display:grid;grid-template-columns:100px 1fr;gap:12px;padding:20px 0;border-top:1px solid #D8D0CB;font-size:17px"><span style="font-weight:600;color:#850D20">주소</span><span>수원 · 정확한 주소 확인 후 반영</span></div><div style="display:grid;grid-template-columns:100px 1fr;gap:12px;padding:20px 0;border-top:1px solid #D8D0CB;font-size:17px"><span style="font-weight:600;color:#850D20">영업시간</span><span>확인 후 반영</span></div><div style="display:grid;grid-template-columns:100px 1fr;gap:12px;padding:20px 0;border-top:1px solid #D8D0CB;font-size:17px"><span style="font-weight:600;color:#850D20">전화</span><span><a href="tel:01041312490" style="font-weight:700">010-4131-2490</a></span></div><div style="display:grid;grid-template-columns:100px 1fr;gap:12px;padding:20px 0;border-top:1px solid #D8D0CB;font-size:17px"><span style="font-weight:600;color:#850D20">예약</span><span>전화 · 네이버 플레이스 · 인스타그램 DM</span></div></div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:10px">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%EB%8D%94%EB%B4%84%EB%B7%B0%ED%8B%B0%20%EC%88%98%EC%9B%90" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;font-size:16px;font-weight:700;transition:transform .3s ease,background .3s ease;background:#080708;color:#FFFFFF" style-hover="transform:translateY(-2px)"><dc-import name="SnsIcon" icon="map" size="18" hint-size="18px,18px"></dc-import>Google 지도 길찾기</a>
+          <a href="https://naver.me/xq3aRFIe" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;font-size:16px;font-weight:700;transition:transform .3s ease,background .3s ease;border:1px solid #080708;color:#080708" style-hover="transform:translateY(-2px)"><dc-import name="SnsIcon" icon="naver" size="16" hint-size="16px,16px"></dc-import>네이버 지도</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="prepare" data-screen-label="03 Prepare" style="background:#F5F1ED;color:#080708;padding:clamp(88px,10vw,144px) clamp(20px,5vw,72px)">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px">
+      <span style="font-size:12px;font-weight:600;letter-spacing:0.28em;color:#850D20">BEFORE VISIT</span>
+      <h2 style="margin:0;font-size:clamp(30px,3.8vw,52px);font-weight:600;line-height:1.24;letter-spacing:-0.035em">상담 전에 알려주세요</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px">
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:36px 24px;background:#FFFFFF;border:1px solid #E2DAD5"><span style="font-size:14px;font-weight:700;color:#850D20">01</span><span style="font-size:20px;font-weight:700">원하는 부위와 분위기</span><span style="font-size:15px;line-height:1.7;color:#4E4648">참고 사진도 좋습니다.</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:36px 24px;background:#FFFFFF;border:1px solid #E2DAD5"><span style="font-size:14px;font-weight:700;color:#850D20">02</span><span style="font-size:20px;font-weight:700">기존 반영구 시술 여부</span><span style="font-size:15px;line-height:1.7;color:#4E4648">시기와 횟수를 알려주세요.</span></div>
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:36px 24px;background:#FFFFFF;border:1px solid #E2DAD5"><span style="font-size:14px;font-weight:700;color:#850D20">03</span><span style="font-size:20px;font-weight:700">건강 관련 사항</span><span style="font-size:15px;line-height:1.7;color:#4E4648">피부 질환, 복용 중인 약 등</span></div>
+    </div>
+  </div>
+</section>
+<section id="sns" data-screen-label="04 SNS" style="background:#080708;color:#F5F1ED;padding:clamp(80px,9vw,128px) clamp(20px,5vw,72px)">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px"><span style="font-size:12px;font-weight:600;letter-spacing:0.28em;color:#C9C2C3">FOLLOW</span><h2 style="margin:0;font-size:clamp(28px,3.4vw,46px);font-weight:600;letter-spacing:-0.03em;color:#FFFFFF">작업 기록은 SNS에서</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px">
+      <a href="https://naver.me/xq3aRFIe" target="_blank" rel="noopener" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:140px;border:1px solid #3A3033;color:#F5F1ED;transition:background .3s ease,border-color .3s ease" style-hover="background:#171214;border-color:#850D20"><dc-import name="SnsIcon" icon="naver" size="28" hint-size="28px,28px"></dc-import><span style="font-size:16px;font-weight:600">네이버 플레이스</span></a>
+      <a href="https://www.instagram.com/thebomm_beauty" target="_blank" rel="noopener" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:140px;border:1px solid #3A3033;color:#F5F1ED;transition:background .3s ease,border-color .3s ease" style-hover="background:#171214;border-color:#850D20"><dc-import name="SnsIcon" icon="instagram" size="28" hint-size="28px,28px"></dc-import><span style="font-size:16px;font-weight:600">Instagram</span></a>
+      <a href="https://youtube.com/@thebomm_beauty_" target="_blank" rel="noopener" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:140px;border:1px solid #3A3033;color:#F5F1ED;transition:background .3s ease,border-color .3s ease" style-hover="background:#171214;border-color:#850D20"><dc-import name="SnsIcon" icon="youtube" size="28" hint-size="28px,28px"></dc-import><span style="font-size:16px;font-weight:600">YouTube</span></a>
+      <a href="https://www.tiktok.com/@jhk6168" target="_blank" rel="noopener" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:140px;border:1px solid #3A3033;color:#F5F1ED;transition:background .3s ease,border-color .3s ease" style-hover="background:#171214;border-color:#850D20"><dc-import name="SnsIcon" icon="tiktok" size="28" hint-size="28px,28px"></dc-import><span style="font-size:16px;font-weight:600">TikTok</span></a>
+      <a href="https://www.daangn.com/kr/local-profile/4hycdm69zso7/?referrer=share" target="_blank" rel="noopener" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:140px;border:1px solid #3A3033;color:#F5F1ED;transition:background .3s ease,border-color .3s ease" style-hover="background:#171214;border-color:#850D20"><dc-import name="SnsIcon" icon="daangn" size="28" hint-size="28px,28px"></dc-import><span style="font-size:16px;font-weight:600">당근</span></a>
+    </div>
+  </div>
+</section>
+<dc-import name="Footer v4" hint-size="100%,320px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {}
+</script>
+</body>
+</html>

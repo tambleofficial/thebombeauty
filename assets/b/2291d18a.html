@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<span role="img" aria-label="{{ label }}" style="display:inline-flex;align-items:center;justify-content:center;width:{{ px }};height:{{ px }};flex:none;line-height:0">
+  <sc-if value="{{ isInstagram }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"></circle></svg></sc-if>
+  <sc-if value="{{ isYoutube }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" width="100%" height="100%"><path fill="currentColor" fill-rule="evenodd" d="M5.5 5.5h13A3.5 3.5 0 0 1 22 9v6a3.5 3.5 0 0 1-3.5 3.5h-13A3.5 3.5 0 0 1 2 15V9a3.5 3.5 0 0 1 3.5-3.5ZM10 9v6l5.2-3Z"></path></svg></sc-if>
+  <sc-if value="{{ isTiktok }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" width="100%" height="100%"><path fill="currentColor" d="M13.6 2.5h3.1a4.6 4.6 0 0 0 4 4v3.1a7.6 7.6 0 0 1-4-1.3v6.6a6.4 6.4 0 1 1-6.4-6.4h.6v3.2h-.6a3.2 3.2 0 1 0 3.3 3.2Z"></path></svg></sc-if>
+  <sc-if value="{{ isNaver }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" width="100%" height="100%"><path fill="currentColor" d="M4 4h5.6l4.8 7V4H20v16h-5.6l-4.8-7v7H4Z"></path></svg></sc-if>
+  <sc-if value="{{ isDaangn }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path fill="currentColor" stroke="none" d="M12 9.2c3.2 0 5.4 2.2 5.4 5 0 3.6-3.5 6.8-5.4 6.8s-5.4-3.2-5.4-6.8c0-2.8 2.2-5 5.4-5Z"></path><path d="M12 9V3.2M12 6.4 8.9 3.9M12 6.4l3.1-2.5"></path></svg></sc-if>
+  <sc-if value="{{ isPhone }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6.6 3.5h3l1.5 4-2 1.3a11 11 0 0 0 6.1 6.1l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z"></path></svg></sc-if>
+  <sc-if value="{{ isMap }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11Z"></path><circle cx="12" cy="10" r="2.3"></circle></svg></sc-if>
+</span>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 40, &quot;height&quot;: 40}, &quot;icon&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;instagram&quot;, &quot;youtube&quot;, &quot;tiktok&quot;, &quot;naver&quot;, &quot;daangn&quot;, &quot;phone&quot;, &quot;map&quot;], &quot;default&quot;: &quot;instagram&quot;, &quot;tsType&quot;: &quot;string&quot;}, &quot;size&quot;: {&quot;editor&quot;: &quot;int&quot;, &quot;default&quot;: 20, &quot;min&quot;: 12, &quot;max&quot;: 64, &quot;tsType&quot;: &quot;number&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const i = (this.props.icon ?? 'instagram').toLowerCase();
+    const s = Number(this.props.size ?? 20);
+    return { px: s + 'px', label: i, isInstagram: i === 'instagram', isYoutube: i === 'youtube', isTiktok: i === 'tiktok', isNaver: i === 'naver', isDaangn: i === 'daangn', isPhone: i === 'phone', isMap: i === 'map' };
+  }
+}
+</script>
+</body>
+</html>

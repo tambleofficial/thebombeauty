@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#850D20"></rect><text x="50" y="60" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#F5F1ED">BOM</text></svg></template>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{margin:0;background:#080708;color:#F5F1ED;font-family:"Pretendard Variable",Pretendard,"Helvetica Neue",Inter,sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:inherit;text-decoration:none}
+a:hover{color:inherit}
+*{box-sizing:border-box}
+::selection{background:#A51229;color:#FFFFFF}
+</style>
+</helmet>
+<dc-import name="Header v4" active="PROGRAM" hint-size="100%,0px"></dc-import>
+<dc-import name="DetailRibbon v7" variant="A" en="PROGRAM" ko="눈썹과 입술,|그리고 다섯 가지 프로그램." desc="모든 프로그램은 대면 상담에서 얼굴형과 현재 상태를 확인한 뒤 디자인을 정합니다. 소요 시간과 리터치 일정은 개인 상태에 따라 달라질 수 있습니다." hint-size="100%,70svh"></dc-import>
+<section data-screen-label="Program Intro" style="position:relative;overflow:hidden;background:#F5F1ED;color:#080708;padding:clamp(72px,8vw,112px) clamp(20px,5vw,72px) clamp(72px,8vw,112px)">
+  <div style="position:relative;max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(48px,6vw,80px)">
+        <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:clamp(10px,1.4vw,18px)">
+      <a href="#brow" data-fx-kind="reveal" data-fx-delay="300" style="display:flex;flex-direction:column;gap:14px;transition:transform .5s cubic-bezier(.16,1,.3,1)" style-hover="transform:translateY(-6px)">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#E6DFDA"><image-slot id="v4-pidx-brow" src="assets/program/v4-pidx-brow.webp" shape="rect" placeholder="눈썹 — 대표 사진"></image-slot></div>
+        <span style="display:flex;justify-content:space-between;align-items:baseline;color:#080708"><span style="font-size:20px;font-weight:600">01 눈썹</span><span style="font-size:12px;font-weight:600;letter-spacing:0.18em;color:#850D20">BROW</span></span>
+      </a>
+      <a href="#lip" data-fx-kind="reveal" data-fx-delay="410" style="display:flex;flex-direction:column;gap:14px;transition:transform .5s cubic-bezier(.16,1,.3,1)" style-hover="transform:translateY(-6px)">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#E6DFDA"><image-slot id="v4-pidx-lip" src="assets/program/v4-pidx-lip.webp" shape="rect" placeholder="입술 — 대표 사진"></image-slot></div>
+        <span style="display:flex;justify-content:space-between;align-items:baseline;color:#080708"><span style="font-size:20px;font-weight:600">02 입술</span><span style="font-size:12px;font-weight:600;letter-spacing:0.18em;color:#850D20">LIP</span></span>
+      </a>
+      <a href="#eyeline" data-fx-kind="reveal" data-fx-delay="520" style="display:flex;flex-direction:column;gap:14px;transition:transform .5s cubic-bezier(.16,1,.3,1)" style-hover="transform:translateY(-6px)">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#E6DFDA"><image-slot id="v4-pidx-eyeline" src="assets/raw/eye01.jpg" shape="rect" placeholder="아이라인 — 대표 사진"></image-slot></div>
+        <span style="display:flex;justify-content:space-between;align-items:baseline;color:#080708"><span style="font-size:20px;font-weight:600">03 아이라인</span><span style="font-size:12px;font-weight:600;letter-spacing:0.18em;color:#850D20">EYELINE</span></span>
+      </a>
+      <a href="#scalp" data-fx-kind="reveal" data-fx-delay="630" style="display:flex;flex-direction:column;gap:14px;transition:transform .5s cubic-bezier(.16,1,.3,1)" style-hover="transform:translateY(-6px)">
+        <div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#E6DFDA"><image-slot id="v4-pidx-scalp" src="assets/raw/scalp01.jpg" shape="rect" placeholder="두피 — 대표 사진"></image-slot></div>
+        <span style="display:flex;justify-content:space-between;align-items:baseline;color:#080708"><span style="font-size:20px;font-weight:600">04 두피</span><span style="font-size:12px;font-weight:600;letter-spacing:0.18em;color:#850D20">SCALP</span></span>
+      </a>
+    </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;border-top:1px solid #D8D0CB">
+      <sc-for list="{{ items }}" as="it" hint-placeholder-count="4">
+        <div onClick="{{ it.toggle }}" style="display:flex;flex-direction:column;gap:14px;padding:20px 0;border-bottom:1px solid #D8D0CB;cursor:pointer">
+          <span style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;color:#080708"><span style="font-size:20px;font-weight:600">{{ it.label }}</span><span style="display:flex;align-items:baseline;gap:12px"><span style="font-size:12px;font-weight:600;letter-spacing:0.18em;color:#850D20">{{ it.en }}</span><span style="font-size:15px;color:#850D20">{{ it.mark }}</span></span></span>
+          <sc-if value="{{ it.open }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#E6DFDA"><image-slot id="{{ it.slot }}" src="{{ it.src }}" shape="rect" placeholder="{{ it.ph }}"></image-slot></div>
+              <a href="{{ it.href }}" style="align-self:flex-start;font-size:15px;font-weight:600;padding-bottom:6px;border-bottom:2px solid #850D20;color:#080708">{{ it.more }}</a>
+            </div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+    </sc-if>
+  </div>
+</section>
+<section id="brow" data-screen-label="눈썹" style="background:#F5F1ED;color:#080708;padding:clamp(96px,11vw,160px) clamp(20px,5vw,72px)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:820px">
+      <span style="font-size:12px;font-weight:600;letter-spacing:0.28em;color:#850D20">01 · BROW</span>
+      <h2 style="margin:0;font-size:clamp(32px,4.2vw,60px);font-weight:600;line-height:1.24;letter-spacing:-0.035em">눈썹</h2>
+      <p style="margin:0;font-size:17px;line-height:1.85;color:#4E4648;max-width:620px">얼굴형과 이마·눈매의 비율, 기존 눈썹의 결과 상태를 확인한 뒤 자연스러운 결 표현과 선명한 형태 중 어울리는 방향을 제안합니다. 남성 눈썹은 골격과 눈매의 인상을 해치지 않도록 두께와 각도를 절제해 조율합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,88px);align-items:start">
+      <div style="display:flex;flex-direction:column;gap:28px"><div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px"><div data-fx-kind="img" style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#E9E3DE"><image-slot id="v4-prog-brow-1" src="assets/program/v4-prog-brow-1.webp" shape="rect" placeholder="BROW — 여성 대표 컷"></image-slot></div><div data-fx-kind="img" style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#E9E3DE"><image-slot id="v4-prog-brow-2" src="assets/program/v4-prog-brow-2.webp" shape="rect" placeholder="BROW — 남성 눈매 클로즈업"></image-slot></div></div></div>
+      <div style="display:flex;flex-direction:column;gap:24px"><span style="font-size:12px;font-weight:600;letter-spacing:0.2em">상담 기준</span><div style="display:flex;flex-direction:column;border-bottom:1px solid #D8D0CB">
+        <div data-fx-kind="reveal" data-fx-delay="0" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #D8D0CB"><span style="font-size:14px;font-weight:700;color:#850D20;padding-top:3px">01</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">눈썹 뼈 위치와 눈과의 거리</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="70" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #D8D0CB"><span style="font-size:14px;font-weight:700;color:#850D20;padding-top:3px">02</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">자연 눈썹의 결 방향과 밀도</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="140" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #D8D0CB"><span style="font-size:14px;font-weight:700;color:#850D20;padding-top:3px">03</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">피부 타입 (유분·건성)</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="210" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #D8D0CB"><span style="font-size:14px;font-weight:700;color:#850D20;padding-top:3px">04</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">기존 반영구 유무와 잔흔 상태</span></div></div>
+      </div>
+        <a href="Cases%20v4.dc.html#BROW" style="align-self:flex-start;font-size:15px;font-weight:600;padding-bottom:6px;border-bottom:2px solid #850D20;transition:opacity .3s ease" style-hover="opacity:0.7">눈썹 사례 보기 →</a></div>
+    </div>
+  </div>
+</section>
+<section id="lip" data-screen-label="입술" style="background:#080708;color:#F5F1ED;padding:clamp(96px,11vw,160px) clamp(20px,5vw,72px)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:820px">
+      <span style="font-size:12px;font-weight:600;letter-spacing:0.28em;color:#B51C31">02 · LIP</span>
+      <h2 style="margin:0;font-size:clamp(32px,4.2vw,60px);font-weight:600;line-height:1.24;letter-spacing:-0.035em">입술</h2>
+      <p style="margin:0;font-size:17px;line-height:1.85;color:#C9C2C3;max-width:620px">입술 본연의 색과 피부 톤, 원하는 분위기를 함께 보고 컬러와 라인을 정합니다. 입술 상태에 따라 발색에는 개인차가 있을 수 있습니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,88px);align-items:start">
+      <div style="display:flex;flex-direction:column;gap:28px"><div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px"><div data-fx-kind="img" style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#171214"><image-slot id="v4-prog-lip-1" src="assets/program/v4-prog-lip-1.webp" shape="rect" placeholder="LIP — 레드 톤 인물 화보"></image-slot></div><div data-fx-kind="img" style="position:relative;aspect-ratio:4/5;overflow:hidden;background:#171214"><image-slot id="v4-prog-lip-2" src="assets/program/v4-prog-lip-2.webp" shape="rect" placeholder="LIP — 입술 디테일"></image-slot></div></div></div>
+      <div style="display:flex;flex-direction:column;gap:24px"><span style="font-size:12px;font-weight:600;letter-spacing:0.2em">상담 기준</span><div style="display:flex;flex-direction:column;border-bottom:1px solid #2A2224">
+        <div data-fx-kind="reveal" data-fx-delay="0" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #2A2224"><span style="font-size:14px;font-weight:700;color:#B51C31;padding-top:3px">01</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">본래 입술 색과 착색 정도</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="70" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #2A2224"><span style="font-size:14px;font-weight:700;color:#B51C31;padding-top:3px">02</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">피부 톤과 어울리는 컬러 범위</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="140" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #2A2224"><span style="font-size:14px;font-weight:700;color:#B51C31;padding-top:3px">03</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">입술 라인의 대칭과 경계</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="210" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #2A2224"><span style="font-size:14px;font-weight:700;color:#B51C31;padding-top:3px">04</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">평소 메이크업 습관</span></div></div>
+      </div>
+        <a href="Cases%20v4.dc.html#LIP" style="align-self:flex-start;font-size:15px;font-weight:600;padding-bottom:6px;border-bottom:2px solid #B51C31;transition:opacity .3s ease" style-hover="opacity:0.7">입술 사례 보기 →</a></div>
+    </div>
+  </div>
+</section>
+<section id="eyeline" data-screen-label="아이라인" style="background:#FFFFFF;color:#080708;padding:clamp(96px,11vw,160px) clamp(20px,5vw,72px)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:820px">
+      <span style="font-size:12px;font-weight:600;letter-spacing:0.28em;color:#850D20">03 · EYELINE</span>
+      <h2 style="margin:0;font-size:clamp(32px,4.2vw,60px);font-weight:600;line-height:1.24;letter-spacing:-0.035em">아이라인</h2>
+      <p style="margin:0;font-size:17px;line-height:1.85;color:#4E4648;max-width:620px">눈의 형태와 쌍꺼풀 라인, 속눈썹 사이 공간을 확인하고 두께와 꼬리 길이를 조율합니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,88px);align-items:start">
+      <div style="display:flex;flex-direction:column;gap:28px"><div data-fx-kind="img" style="position:relative;aspect-ratio:4/3;overflow:hidden;background:#F0EBE7"><image-slot id="v4-prog-eyeline" src="assets/program/v4-prog-eyeline.webp" shape="rect" placeholder="EYELINE — 눈매 클로즈업"></image-slot></div></div>
+      <div style="display:flex;flex-direction:column;gap:24px"><span style="font-size:12px;font-weight:600;letter-spacing:0.2em">상담 기준</span><div style="display:flex;flex-direction:column;border-bottom:1px solid #E6E0DC">
+        <div data-fx-kind="reveal" data-fx-delay="0" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #E6E0DC"><span style="font-size:14px;font-weight:700;color:#850D20;padding-top:3px">01</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">눈 형태와 눈꼬리 방향</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="70" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #E6E0DC"><span style="font-size:14px;font-weight:700;color:#850D20;padding-top:3px">02</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">쌍꺼풀 유무와 라인 위치</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="140" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #E6E0DC"><span style="font-size:14px;font-weight:700;color:#850D20;padding-top:3px">03</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">평소 아이 메이크업 스타일</span></div></div>
+      </div>
+        <a href="Cases%20v4.dc.html#EYELINE" style="align-self:flex-start;font-size:15px;font-weight:600;padding-bottom:6px;border-bottom:2px solid #850D20;transition:opacity .3s ease" style-hover="opacity:0.7">아이라인 사례 보기 →</a></div>
+    </div>
+  </div>
+</section>
+<section id="scalp" data-screen-label="두피" style="background:#171214;color:#F5F1ED;padding:clamp(96px,11vw,160px) clamp(20px,5vw,72px)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:820px">
+      <span style="font-size:12px;font-weight:600;letter-spacing:0.28em;color:#B51C31">04 · SCALP</span>
+      <h2 style="margin:0;font-size:clamp(32px,4.2vw,60px);font-weight:600;line-height:1.24;letter-spacing:-0.035em">두피</h2>
+      <p style="margin:0;font-size:17px;line-height:1.85;color:#C9C2C3;max-width:620px">두피 상태와 헤어라인을 확인하고 밀도감을 표현하는 디자인 방향을 상담합니다. 의료 시술이 아닌 시각적 디자인 영역입니다.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,88px);align-items:start">
+      <div style="display:flex;flex-direction:column;gap:28px"><div data-fx-kind="img" style="position:relative;aspect-ratio:4/3;overflow:hidden;background:#080708"><image-slot id="v4-prog-scalp" src="assets/program/v4-prog-scalp.webp" shape="rect" placeholder="SCALP — 헤어라인 디자인"></image-slot></div></div>
+      <div style="display:flex;flex-direction:column;gap:24px"><span style="font-size:12px;font-weight:600;letter-spacing:0.2em">상담 기준</span><div style="display:flex;flex-direction:column;border-bottom:1px solid #2E2629">
+        <div data-fx-kind="reveal" data-fx-delay="0" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #2E2629"><span style="font-size:14px;font-weight:700;color:#B51C31;padding-top:3px">01</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">헤어라인 형태와 빈 영역</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="70" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #2E2629"><span style="font-size:14px;font-weight:700;color:#B51C31;padding-top:3px">02</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">모발 색과 두피 톤</span></div></div>
+        <div data-fx-kind="reveal" data-fx-delay="140" style="display:grid;grid-template-columns:52px 1fr;gap:12px;padding:20px 0;border-top:1px solid #2E2629"><span style="font-size:14px;font-weight:700;color:#B51C31;padding-top:3px">03</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:18px;font-weight:600;line-height:1.5">두피 컨디션 (유분·각질)</span></div></div>
+      </div>
+        <a href="Cases%20v4.dc.html#SCALP" style="align-self:flex-start;font-size:15px;font-weight:600;padding-bottom:6px;border-bottom:2px solid #B51C31;transition:opacity .3s ease" style-hover="opacity:0.7">두피 사례 보기 →</a></div>
+    </div>
+  </div>
+</section>
+<section data-screen-label="CTA" style="position:relative;overflow:hidden;padding:clamp(80px,9vw,128px) clamp(20px,5vw,72px)">
+  <dc-import name="SpotlightBg v4" tone="crimson" sweep="{{ false }}" x="78%" y="30%" hint-size="100%,100%" style="position:absolute;inset:0"></dc-import>
+  <div style="position:relative;max-width:1280px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px">
+    <h2 style="margin:0;font-size:clamp(28px,3.4vw,48px);font-weight:600;line-height:1.32;letter-spacing:-0.03em;color:#FFFFFF">기존 반영구가 고민이라면,<br>수정·복원 상담부터 시작하세요.</h2>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px"><a href="Correction%20v4.dc.html" style="display:inline-flex;align-items:center;min-height:56px;padding:0 30px;background:#080708;color:#FFFFFF;font-size:15px;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,0.22);transition:transform .35s ease" style-hover="transform:translateY(-2px)">잔흔 수정·복원 안내</a><a href="https://naver.me/xq3aRFIe" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;min-height:56px;padding:0 30px;background:#F5F1ED;color:#850D20;font-size:15px;font-weight:700;box-shadow:inset 0 1px 0 rgba(255,255,255,0.22);transition:transform .35s ease" style-hover="transform:translateY(-2px)">상담하기</a><a href="tel:01041312490" style="display:inline-flex;align-items:center;min-height:56px;padding:0 30px;border:1px solid #F5F1ED;color:#F5F1ED;font-size:15px;font-weight:600;transition:opacity .35s ease" style-hover="opacity:0.75">전화 상담 010-4131-2490</a></div>
+  </div>
+</section>
+<dc-import name="Footer v4" hint-size="100%,320px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1440, closed: {} };
+  componentDidMount() {
+    this.onResize = () => { const w = window.innerWidth; if (w !== this.state.w) this.setState({ w }); };
+    window.addEventListener('resize', this.onResize);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+  renderVals() {
+    const { w, closed } = this.state;
+    const m = w < 900;
+    const data = [
+      { ko: '눈썹', en: 'BROW', href: '#brow', slot: 'v4-pidx-brow', src: 'assets/program/v4-pidx-brow.webp' },
+      { ko: '입술', en: 'LIP', href: '#lip', slot: 'v4-pidx-lip', src: 'assets/program/v4-pidx-lip.webp' },
+      { ko: '아이라인', en: 'EYELINE', href: '#eyeline', slot: 'v4-pidx-eyeline', src: 'assets/raw/eye01.jpg' },
+      { ko: '두피', en: 'SCALP', href: '#scalp', slot: 'v4-pidx-scalp', src: 'assets/raw/scalp01.jpg' },
+    ];
+    return {
+      isDesktop: !m, isMobile: m,
+      items: data.map((d, i) => ({ ...d, label: '0' + (i + 1) + ' ' + d.ko, ph: d.ko + ' — 대표 사진',
+        open: !closed[i], mark: !closed[i] ? '−' : '+', more: d.ko + ' 자세히 보기 →',
+        toggle: () => this.setState(st => ({ closed: { ...st.closed, [i]: !st.closed[i] } })) })),
+    };
+  }
+}
+</script>
+</body>
+</html>
