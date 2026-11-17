@@ -5,7 +5,7 @@
 3. Framework preset: None / Build command: (비움) / Build output directory: `/`
 4. 배포 후 Custom domains에서 도메인 연결
 
-도메인이 thebombeauty.com 이 아니면 sitemap.xml, rss.xml, robots.txt, index.html(canonical·og:url)의 주소를 바꿔 주세요.
+도메인이 thebommbeauty.co.kr 이 아니면 sitemap.xml, rss.xml, robots.txt, index.html(canonical·og:url)의 주소를 바꿔 주세요.
 
 페이지 주소: / · /brand · /program · /correction · /cases · /contact
 
