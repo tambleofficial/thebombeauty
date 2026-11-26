@@ -8,27 +8,27 @@ const SEO_PAGES = {"":{"file":"home","path":"/"},"brand":{"file":"brand","path":
 const SEO_META = {
  "": {
   "title": "수원 눈썹문신·두피문신·입술 반영구 | 더봄뷰티",
-  "desc": "수원 더봄뷰티는 얼굴형과 현재 상태를 살펴 눈썹문신, 입술·아이라인 반영구, 두피문신을 1:1로 상담합니다. 기존 반영구 잔흔 수정·복원도 함께 안내합니다."
+  "desc": "수원 더봄뷰티. 얼굴형과 현재 상태를 살펴 눈썹문신, 입술·아이라인 반영구, 두피문신과 잔흔 수정·복원을 상담합니다."
  },
  "brand": {
   "title": "수원 반영구 스튜디오 더봄뷰티, 대표원장 장형겸",
-  "desc": "수원 반영구 스튜디오 더봄뷰티는 유행하는 형태를 그대로 옮기지 않고 얼굴형과 피부 상태, 기존 반영구의 흔적을 함께 살펴 디자인을 제안합니다."
+  "desc": "수원 반영구 스튜디오 더봄뷰티는 얼굴형과 피부 상태, 기존 반영구의 흔적을 함께 살펴 디자인을 제안합니다."
  },
  "program": {
   "title": "수원 눈썹 반영구·입술·아이라인·두피 시술 | 더봄뷰티",
-  "desc": "더봄뷰티의 눈썹 반영구, 입술, 아이라인, 두피문신, 잔흔 수정·복원 다섯 가지 프로그램을 안내합니다. 수원 팔달에서 1:1로 상담합니다."
+  "desc": "더봄뷰티의 눈썹 반영구, 입술, 아이라인, 두피문신, 잔흔 수정·복원 다섯 가지 프로그램을 수원 팔달에서 상담합니다."
  },
  "correction": {
   "title": "수원 반영구 잔흔 수정·복원 상담 | 더봄뷰티",
-  "desc": "기존 반영구의 잔흔, 변색, 형태가 고민이라면 수원 더봄뷰티에서 현재 상태를 먼저 확인하고 진행 가능한 범위를 안내받으세요. 사진으로 먼저 상담할 수 있습니다."
+  "desc": "기존 반영구의 잔흔과 변색, 형태가 고민이라면 수원 더봄뷰티에서 현재 상태를 먼저 확인하고 가능한 범위를 안내받으세요."
  },
  "cases": {
   "title": "수원 입술문신·눈썹문신 작업 사례와 후기 | 더봄뷰티",
-  "desc": "수원 더봄뷰티의 입술문신, 눈썹문신, 아이라인, 수정·복원 실제 작업 사례와 고객 후기입니다. 같은 조건에서 촬영한 사진으로 비교합니다."
+  "desc": "수원 더봄뷰티의 입술문신·눈썹문신·아이라인·수정 복원 실제 작업 사례와 후기. 같은 조건에서 촬영해 비교합니다."
  },
  "contact": {
   "title": "더봄뷰티 상담·예약·오시는 길 | 수원 팔달",
-  "desc": "더봄뷰티 상담·예약 방법과 오시는 길입니다. 경기 수원시 팔달구 팔달로 69, 1동 403호. 월–금 10:00–19:00, 토 10:00–18:00. 전화 010-4131-2490."
+  "desc": "더봄뷰티 상담·예약과 오시는 길. 경기 수원시 팔달구 팔달로 69, 1동 403호. 월–금 10–19시, 토 10–18시."
  }
 };
 const SEO_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"BeautySalon\",\"name\":\"더봄뷰티 THE BOM BEAUTY\",\"url\":\"https://thebommbeauty.co.kr/\",\"telephone\":\"+82-10-4131-2490\",\"image\":\"https://thebommbeauty.co.kr/favicon-512.png\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"팔달로 69, 1동 403호 (고등동, 수원라임스퀘어)\",\"addressLocality\":\"수원시 팔달구\",\"addressRegion\":\"경기도\",\"postalCode\":\"16452\",\"addressCountry\":\"KR\"},\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"opens\":\"10:00\",\"closes\":\"19:00\"},{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":\"Saturday\",\"opens\":\"10:00\",\"closes\":\"18:00\"}],\"sameAs\":[\"https://www.instagram.com/thebomm_beauty\",\"https://thebommacademy.co.kr/\",\"https://thebommrecorrection.co.kr/\"]}";
